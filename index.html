@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hub | Hello!</title>
+	<link rel="icon" href="icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300,500,700">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<hub class="hub">
+
+		<div class="hub_greeting-message">
+			<span>h</span><span>e</span><span>l</span><span>l</span><span>o</span><span> </span>
+			<span>t</span><span>h</span><span>e</span><span>r</span><span>e</span>
+		</div>
+
+		<div class="hub_body">
+			<div class="container">
+				<div class="row">
+
+					<div class="list-group page-header">
+						<div class="list-group-separator"></div>
+						<div class="list-group-item">
+							<div class="row-picture">
+								<img class="circle" src="img/me.jpg" alt="icon">
+							</div>
+							<div class="row-content">
+								<h4 class="list-group-item-heading">Oleg Vasilyev</h4>
+
+								<p class="list-group-item-text">
+									<a href="//vk.com/this_olegvasilyev" target="_blank" class="btn fa fa-vk"></a>
+									<a href="//github.com/oleg-vasilyev" target="_blank" class="btn fa fa-github"></a>
+									<a href="mailto:this.olegvasilyev@gmail.com" class="btn fa fa-envelope-o"></a>
+								</p>
+							</div>
+						</div>
+						<div class="list-group-separator"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 col-lg-3">
+						<div class="well hub_animation-container">
+							<div class="hub_img-container">
+								<img src="img/eco.png" alt="eco">
+							</div>
+							<span class="hub_caption-animation">
+							<p><h5>Ecology</h5></p>
+							<p>Card site of the industrial company</p>
+							<p><a class="btn btn-lg btn-raised" href="//oleg-vasilyev.github.io/еco" target="_blank">Learn more</a></p>
+						</span>
+						</div>
+					</div>
+
+					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 col-lg-3">
+						<div class="well hub_animation-container">
+							<div class="hub_img-container">
+								<img src="img/dairy.png" alt="dairy">
+							</div>
+							<span class="hub_caption-animation">
+							<p><h5>Dairy</h5></p>
+							<p>Site-sketchpad</p>
+							<p><a class="btn btn-lg btn-raised" href="//oleg-vasilyev.github.io/diary" target="_blank">Learn more</a></p>
+						</span>
+						</div>
+					</div>
+
+					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 col-lg-3">
+						<div class="well hub_animation-container">
+							<div class="hub_img-container">
+								<img src="img/tedxmahilyow.png" alt="tedxmahilyow">
+							</div>
+							<span class="hub_caption-animation">
+							<p><h5>TEDxMahilyow</h5></p>
+							<p>Card site of the non-profit organization</p>
+							<p><a class="btn btn-lg btn-raised" href="//northerwind42.github.io/tedxmahilyow" target="_blank">Learn more</a></p>
+						</span>
+						</div>
+					</div>
+
+					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 col-lg-3">
+						<div class="well hub_animation-container">
+							<div class="hub_img-container">
+								<img src="img/zanyatki.png" alt="zanyatki">
+							</div>
+							<span class="hub_caption-animation">
+							<p><h5>Zanyatki</h5></p>
+							<p>Open source project</p>
+							<p><a class="btn btn-lg btn-raised" href="//zanyatki.by" target="_blank">Learn more</a></p>
+						</span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+	</hub>
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.min.js"></script>
+
+<script>
+	$(function () {
+
+		$(".hub_greeting-message span").css("opacity", 1);
+		setTimeout(() => {
+			$(".hub_greeting-message").css("display", "none");
+			$(".hub_body").css("display", "block");
+			setTimeout(() => {
+				$(".hub_body").css("opacity", 1);
+			}, 0);
+
+		}, 3000)
+
+	})
+</script>
+
+<script>$.material.init()</script>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "voc",
+  "version": "0.0.0",
+  "author": "Oleg Vasilyev",
+  "license": "ISC",
+  "scripts": {
+    "start": "concurrently \"lite-server\" \"npm run watch\"",
+    "dev-css": "gulp dev-css",
+    "rel-css": "gulp rel-css",
+    "watch": "gulp watch",
+    "lite": "lite-server --version"
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "lite-server": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-cssmin": "0.1.7",
+    "gulp-stylus": "2.6.0",
+    "gulp-watch": "4.3.11",
+    "autoprefixer-stylus": "0.11.0"
+  },
+  "dependencies": {
+    "normalize.css": "4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "//github.com/oleg-vasilyev/oleg-vasilyev.github.io"
+  }
+}
